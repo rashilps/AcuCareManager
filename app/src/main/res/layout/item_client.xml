@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@color/blue"
+    android:layout_marginBottom="10dp"
+    android:elevation="2dp">
+
+    <TextView
+        android:id="@+id/tvClientName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        style="@style/cardTextView"/>
+
+    <TextView
+        android:id="@+id/tvClientContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact"
+        android:layout_marginTop="4dp"
+        style="@style/cardTextView"/>
+
+    <TextView
+        android:id="@+id/tvClientNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Notes"
+        android:layout_marginTop="4dp"
+        style="@style/cardTextView"/>
+
+</LinearLayout>

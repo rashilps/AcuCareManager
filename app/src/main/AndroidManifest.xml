@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AcuCareManager"
+        tools:targetApi="31">
+        <activity
+            android:name=".manageclient.DeleteClientActivity"
+            android:exported="false" />
+        <activity
+            android:name=".manageclient.EditClientActivity"
+            android:exported="false" />
+        <activity
+            android:name=".manageclient.SearchClientActivity"
+            android:exported="false" />
+        <activity
+            android:name=".manageclient.ViewClientsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".manageclient.AddClientActivity"
+            android:exported="false" />
+        <activity
+            android:name=".homescreen.FinanceSummary"
+            android:exported="false" />
+        <activity
+            android:name=".homescreen.FeedbackLog"
+            android:exported="false" />
+        <activity
+            android:name=".homescreen.ManageSessions"
+            android:exported="false" />
+        <activity
+            android:name=".homescreen.ManageClients"
+            android:exported="false" />
+        <activity
+            android:name=".loginandregister.UserLogin"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".homescreen.UserHomeScreen"
+            android:exported="false" />
+        <activity
+            android:name=".loginandregister.UserSignup"
+            android:exported="false" />
+        <activity
+            android:name=".loginandregister.PasswordReset"
+            android:exported="false" />
+    </application>
+
+</manifest>
