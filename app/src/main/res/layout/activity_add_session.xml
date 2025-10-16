@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginandregister.PasswordReset"
+    android:orientation="vertical"
+    android:background="@color/lightBlue">
+    <androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:minHeight="@dimen/abc_action_bar_default_height_material">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:src="@drawable/small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="AcuCare Manager"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        style="@style/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SCHEDULE A SESSION"
+        android:textSize="35sp"
+        android:id="@+id/login_tv"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        />
+    <View
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/darkbrown"/>
+    <!-- Display Selected Time -->
+    <TextView
+        style="@style/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select client name"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+    <!-- Spinner for selecting client -->
+    <Spinner
+        android:id="@+id/spinnerClient"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="5dp"
+        />
+
+    <!-- Pick Date Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/Button"
+        android:id="@+id/btnPickDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Date"
+        android:textAllCaps="false"
+        />
+
+    <!-- Display Selected Date -->
+    <TextView
+        style="@style/textView"
+        android:id="@+id/tvSelectedDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date: Not Selected"
+        android:textStyle="bold"
+        />
+
+    <!-- Pick Time Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/Button"
+        android:id="@+id/btnPickTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Time"
+        android:textAllCaps="false" />
+
+    <!-- Display Selected Time -->
+    <TextView
+        style="@style/textView"
+        android:id="@+id/tvSelectedTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Time: Not Selected"
+        android:textStyle="bold"/>
+
+    <!-- Fee Input -->
+    <EditText
+        style="@style/textView"
+        android:id="@+id/etSessionFee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Fee Amount"
+        android:inputType="number"/>
+
+    <!-- Notes Input -->
+    <EditText
+        style="@style/textView"
+        android:id="@+id/etSessionNotes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Notes (Optional)"
+        android:minLines="3" />
+
+    <!-- Save Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/Button"
+        android:id="@+id/btnSaveSession"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Session"
+        android:textAllCaps="false"
+        android:layout_marginTop="24dp" />
+
+</LinearLayout>

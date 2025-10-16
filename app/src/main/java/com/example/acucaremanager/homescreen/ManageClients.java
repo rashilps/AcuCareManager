@@ -16,8 +16,14 @@ import com.example.acucaremanager.manageclient.EditClientActivity;
 import com.example.acucaremanager.manageclient.SearchClientActivity;
 import com.example.acucaremanager.manageclient.ViewClientsActivity;
 import com.google.firebase.auth.FirebaseAuth;
+import com.example.acucaremanager.R;
+import com.example.acucaremanager.loginandregister.SharedPreferenceConfig;
+import com.example.acucaremanager.loginandregister.UserLogin;
+import com.google.firebase.auth.FirebaseAuth;
 public class ManageClients extends AppCompatActivity {
-    AppCompatButton addClient,deleteClient,editClient,searchClient,viewClient;
+    AppCompatButton addClient,deleteClient,editClient,searchClient,viewClient,logout;
+    FirebaseAuth mAuth;
+    private SharedPreferenceConfig sharedPreferenceConfig;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -27,7 +33,18 @@ public class ManageClients extends AppCompatActivity {
         editClient = findViewById(R.id.editClient);
         searchClient = findViewById(R.id.searchClient);
         viewClient = findViewById(R.id.viewAllClients);
+        logout = findViewById(R.id.b1);
 
+        logout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                mAuth.signOut();
+                Intent i = new Intent(ManageClients.this, UserLogin.class);
+                startActivity(i);
+                finish();
+                sharedPreferenceConfig.writeLoginStatus(false);
+            }
+        });
         addClient.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

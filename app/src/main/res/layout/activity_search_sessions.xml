@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightBlue"
+    tools:context=".managesession.SearchSessionActivity">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:minHeight="@dimen/abc_action_bar_default_height_material">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:src="@drawable/small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="AcuCare Manager"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Title -->
+    <TextView
+        style="@style/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEARCH SESSIONS"
+        android:textSize="35sp"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:gravity="center" />
+
+    <!-- Divider -->
+    <View
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/darkbrown" />
+
+    <!-- Search Box -->
+    <EditText
+        style="@style/textView"
+        android:id="@+id/etSearchSession"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search by Client or Date"
+        android:layout_margin="16dp" />
+
+    <!-- RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewSearchSession"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="4dp" />
+
+</LinearLayout>

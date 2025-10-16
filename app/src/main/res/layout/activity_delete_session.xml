@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightBlue"
+    tools:context=".managesession.DeleteSessionActivity">
+
+    <!-- Toolbar -->
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:minHeight="@dimen/abc_action_bar_default_height_material">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="left"
+            android:src="@drawable/small" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="AcuCare Manager"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- Title -->
+    <TextView
+        style="@style/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DELETE SESSION"
+        android:textSize="35sp"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
+
+    <!-- Divider -->
+    <View
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/darkbrown" />
+
+    <!-- Spinner -->
+    <Spinner
+        android:id="@+id/spinnerDeleteSession"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="20dp" />
+
+    <!-- Delete Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/Button"
+        android:id="@+id/btnDeleteSession"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Delete Session"
+        android:textAllCaps="false" />
+
+</LinearLayout>
