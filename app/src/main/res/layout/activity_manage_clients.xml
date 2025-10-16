@@ -65,7 +65,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="20dp"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:text="Add new \nclient"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/viewAllClients"
@@ -97,7 +98,8 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_margin="20dp"
-            android:layout_weight="1"/>
+            android:layout_weight="1"
+            android:text="Edit Client \ninfo"/>
     </LinearLayout>
 
 <LinearLayout

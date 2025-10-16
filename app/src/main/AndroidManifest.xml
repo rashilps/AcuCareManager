@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
-<<<<<<< HEAD
 
+    <!-- Required for Firebase -->
     <uses-permission android:name="android.permission.INTERNET" />
 
-=======
-    <uses-permission android:name="android.permission.INTERNET"/>
->>>>>>> 3924d79200926a70af7da7db7a9f2b79a926b384
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -18,69 +15,38 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AcuCareManager"
         tools:targetApi="31">
-        <activity
-<<<<<<< HEAD
-            android:name=".managesession.DeleteSessionActivity"
-            android:exported="false" />
-        <activity
-            android:name=".managesession.EditSessionActivity"
-            android:exported="false" />
-        <activity
-            android:name=".managesession.SearchSessionsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".managesession.ViewAllSessionsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".managesession.AddSessionActivity"
-            android:exported="false" />
-        <activity
-=======
->>>>>>> 3924d79200926a70af7da7db7a9f2b79a926b384
-            android:name=".manageclient.DeleteClientActivity"
-            android:exported="false" />
-        <activity
-            android:name=".manageclient.EditClientActivity"
-            android:exported="false" />
-        <activity
-            android:name=".manageclient.SearchClientActivity"
-            android:exported="false" />
-        <activity
-            android:name=".manageclient.ViewClientsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".manageclient.AddClientActivity"
-            android:exported="false" />
-        <activity
-            android:name=".homescreen.FinanceSummary"
-            android:exported="false" />
-        <activity
-            android:name=".homescreen.FeedbackLog"
-            android:exported="false" />
-        <activity
-            android:name=".homescreen.ManageSessions"
-            android:exported="false" />
-        <activity
-            android:name=".homescreen.ManageClients"
-            android:exported="false" />
-        <activity
-            android:name=".loginandregister.UserLogin"
-            android:exported="true">
+
+        <!-- SESSION MANAGEMENT SCREENS -->
+        <activity android:name=".managesession.AddSessionActivity" android:exported="false" />
+        <activity android:name=".managesession.ViewAllSessionsActivity" android:exported="false" />
+        <activity android:name=".managesession.SearchSessionsActivity" android:exported="false" />
+        <activity android:name=".managesession.EditSessionActivity" android:exported="false" />
+        <activity android:name=".managesession.DeleteSessionActivity" android:exported="false" />
+
+        <!-- CLIENT MANAGEMENT SCREENS -->
+        <activity android:name=".manageclient.AddClientActivity" android:exported="false" />
+        <activity android:name=".manageclient.ViewClientsActivity" android:exported="false" />
+        <activity android:name=".manageclient.SearchClientActivity" android:exported="false" />
+        <activity android:name=".manageclient.EditClientActivity" android:exported="false" />
+        <activity android:name=".manageclient.DeleteClientActivity" android:exported="false" />
+
+        <!-- HOME NAVIGATION SCREENS -->
+        <activity android:name=".homescreen.ManageClients" android:exported="false" />
+        <activity android:name=".homescreen.ManageSessions" android:exported="false" />
+        <activity android:name=".homescreen.FeedbackLog" android:exported="false" />
+        <activity android:name=".homescreen.FinanceSummary" android:exported="false" />
+        <activity android:name=".homescreen.UserHomeScreen" android:exported="false" />
+
+        <!-- AUTH SCREENS -->
+        <activity android:name=".loginandregister.UserSignup" android:exported="false" />
+        <activity android:name=".loginandregister.PasswordReset" android:exported="false" />
+        <activity android:name=".loginandregister.UserLogin" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".homescreen.UserHomeScreen"
-            android:exported="false" />
-        <activity
-            android:name=".loginandregister.UserSignup"
-            android:exported="false" />
-        <activity
-            android:name=".loginandregister.PasswordReset"
-            android:exported="false" />
+
     </application>
 
 </manifest>
