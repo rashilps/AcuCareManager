@@ -6,8 +6,8 @@
     android:background="@color/lightBlue"
     android:orientation="vertical">
 
+    <!-- Toolbar -->
     <androidx.appcompat.widget.Toolbar
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/blue"
@@ -16,7 +16,6 @@
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_gravity="left"
             android:src="@drawable/small" />
 
         <TextView
@@ -29,6 +28,7 @@
             android:textStyle="bold" />
     </androidx.appcompat.widget.Toolbar>
 
+    <!-- Title -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -40,7 +40,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_span="2"
             android:gravity="center"
             android:text="HOME SCREEN"
             android:textSize="35sp"
@@ -54,6 +53,7 @@
             android:background="@color/darkbrown" />
     </LinearLayout>
 
+    <!-- Row 1 -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
@@ -66,7 +66,7 @@
             android:layout_height="match_parent"
             android:layout_margin="20dp"
             android:layout_weight="1"
-            android:text="Manage \nClients" />
+            android:text="Manage Clients" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/manageSessions"
@@ -75,9 +75,10 @@
             android:layout_height="match_parent"
             android:layout_margin="20dp"
             android:layout_weight="1"
-            android:text="Manage \nSessions" />
+            android:text="Manage Sessions" />
     </LinearLayout>
 
+    <!-- Row 2 -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
@@ -90,7 +91,7 @@
             android:layout_height="match_parent"
             android:layout_margin="20dp"
             android:layout_weight="1"
-            android:text="Feedback \nLog" />
+            android:text="Feedback Log" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/financeSummary"
@@ -99,10 +100,10 @@
             android:layout_height="match_parent"
             android:layout_margin="20dp"
             android:layout_weight="1"
-            android:text="Finance \nSummary" />
+            android:text="Finance Summary" />
     </LinearLayout>
 
-
+    <!-- Logout -->
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/b1"
         style="@style/Button"
@@ -110,8 +111,6 @@
         android:layout_height="wrap_content"
         android:layout_gravity="right"
         android:layout_margin="20dp"
-        android:text="logout" />
-
+        android:text="Logout" />
 
 </LinearLayout>
-

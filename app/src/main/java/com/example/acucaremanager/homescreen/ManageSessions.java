@@ -1,5 +1,6 @@
 package com.example.acucaremanager.homescreen;
 
+<<<<<<< HEAD
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -19,10 +20,25 @@ public class ManageSessions extends AppCompatActivity {
     AppCompatButton addSession,deleteSession,editSession,searchSession,viewSession,logout;
     FirebaseAuth mAuth;
     private SharedPreferenceConfig sharedPreferenceConfig;
+=======
+import android.os.Bundle;
+
+import androidx.activity.EdgeToEdge;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.graphics.Insets;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
+
+import com.example.acucaremanager.R;
+
+public class ManageSessions extends AppCompatActivity {
+
+>>>>>>> 3924d79200926a70af7da7db7a9f2b79a926b384
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_manage_sessions);
+<<<<<<< HEAD
         logout = findViewById(R.id.b1);
         addSession = findViewById(R.id.addSession);
         deleteSession = findViewById(R.id.deleteSession);
@@ -83,5 +99,7 @@ public class ManageSessions extends AppCompatActivity {
             }
         });
         
+=======
+>>>>>>> 3924d79200926a70af7da7db7a9f2b79a926b384
     }
 }

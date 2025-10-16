@@ -6,8 +6,8 @@
     android:background="@color/lightBlue"
     android:orientation="vertical">
 
+    <!-- Toolbar -->
     <androidx.appcompat.widget.Toolbar
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/blue"
@@ -16,7 +16,6 @@
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_gravity="left"
             android:src="@drawable/small" />
 
         <TextView
@@ -29,6 +28,7 @@
             android:textStyle="bold" />
     </androidx.appcompat.widget.Toolbar>
 
+    <!-- Title -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -40,7 +40,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_span="2"
             android:gravity="center"
             android:text="MANAGE SESSIONS"
             android:textSize="35sp"
@@ -54,6 +53,7 @@
             android:background="@color/darkbrown" />
     </LinearLayout>
 
+    <!-- Row 1 -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
@@ -75,9 +75,10 @@
             android:layout_height="match_parent"
             android:layout_margin="20dp"
             android:layout_weight="1"
-            android:text="View all\nSESSIONS" />
+            android:text="VIEW ALL \nSESSIONS" />
     </LinearLayout>
 
+    <!-- Row 2 -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="200dp"
@@ -90,7 +91,7 @@
             android:layout_height="match_parent"
             android:layout_margin="20dp"
             android:layout_weight="1"
-            android:text="Search \nSESSION" />
+            android:text="SEARCH \nSESSION" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/editSession"
@@ -99,32 +100,32 @@
             android:layout_height="match_parent"
             android:layout_margin="20dp"
             android:layout_weight="1"
-            android:text="Edit \nSESSION" />
+            android:text="EDIT \nSESSION" />
     </LinearLayout>
 
+    <!-- Row 3 -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/deleteSession"
             style="@style/Button"
-            android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="150dp"
-            android:layout_gravity="right"
             android:layout_margin="20dp"
-            android:text="Delete \nSESSION" />
+            android:layout_weight="1"
+            android:text="DELETE \nSESSION" />
+
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/b1"
             style="@style/Button"
-            android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="150dp"
-            android:layout_gravity="right"
             android:layout_margin="20dp"
-            android:text="logout" />
+            android:layout_weight="1"
+            android:text="LOGOUT" />
     </LinearLayout>
 
 </LinearLayout>
-
