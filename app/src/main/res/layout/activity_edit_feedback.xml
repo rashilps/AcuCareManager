@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightBlue">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <!-- Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/blue"
+            android:minHeight="@dimen/abc_action_bar_default_height_material">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/small" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="AcuCare Manager"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <!-- Title -->
+        <TextView
+            style="@style/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EDIT FEEDBACK"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginTop="15dp" />
+
+        <!-- Divider -->
+        <View
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/darkbrown" />
+
+        <!-- Spinner: Select Feedback -->
+        <Spinner
+            android:id="@+id/spinnerSelectFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp" />
+
+        <!-- Spinner: Select Client Name -->
+        <Spinner
+            android:id="@+id/spinnerEditFeedbackClient"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Edit Feedback Text -->
+        <EditText
+            style="@style/textView"
+            android:id="@+id/etEditFeedbackNote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Edit feedback text..."
+            android:minLines="3"
+            android:gravity="top"
+            android:layout_marginTop="16dp" />
+
+        <!-- Update Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/Button"
+            android:id="@+id/btnUpdateFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Feedback"
+            android:textAllCaps="false"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+</ScrollView>

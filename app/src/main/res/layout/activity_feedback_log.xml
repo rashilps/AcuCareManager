@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".loginandregister.PasswordReset"
+    android:background="@color/lightBlue"
     android:orientation="vertical"
-    android:background="@color/lightBlue">
+    tools:context=".homescreen.FeedbackLog">
+
+    <!-- Toolbar -->
     <androidx.appcompat.widget.Toolbar
-        xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/blue"
@@ -17,7 +17,6 @@
         <ImageView
             android:layout_width="30dp"
             android:layout_height="30dp"
-            android:layout_gravity="left"
             android:src="@drawable/small" />
 
         <TextView
@@ -29,49 +28,99 @@
             android:textSize="20sp"
             android:textStyle="bold" />
     </androidx.appcompat.widget.Toolbar>
+
+    <!-- Title -->
     <TextView
         style="@style/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="FEEDBACK LOG"
+        android:text="MANAGE FEEDBACK"
         android:textSize="35sp"
-        android:id="@+id/login_tv"
-        android:layout_marginTop="15dp"
         android:textStyle="bold"
         android:gravity="center"
-        />
+        android:layout_marginTop="15dp" />
+
+    <!-- Divider -->
     <View
         android:layout_marginLeft="5dp"
         android:layout_marginRight="10dp"
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:background="@color/darkbrown"/>
-    <EditText
-        style="@style/textView"
-        android:id="@+id/user"
+        android:background="@color/darkbrown" />
+
+    <!-- Row 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/addFeedback"
+            style="@style/Button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:text="ADD\nFEEDBACK" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/viewFeedback"
+            style="@style/Button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:text="VIEW\nFEEDBACK" />
+    </LinearLayout>
+
+    <!-- Row 2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/searchFeedback"
+            style="@style/Button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:text="SEARCH\nFEEDBACK" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/editFeedback"
+            style="@style/Button"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:text="EDIT\nFEEDBACK" />
+    </LinearLayout>
+
+    <!-- Row 3 -->
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="150dp"
-        android:layout_marginRight="20dp"
-        android:hint="Email"
+        android:orientation="horizontal">
 
-        android:textSize="22sp" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/deleteFeedback"
+            style="@style/Button"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:text="DELETE\nFEEDBACK" />
 
-
-
-    <androidx.appcompat.widget.AppCompatButton
-        style="@style/Button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-
-        android:text="Send password"
-        android:textSize="16sp"
-        android:textColor="@color/white"
-        android:id="@+id/send"
-        />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/logoutFeedback"
+            style="@style/Button"
+            android:layout_width="0dp"
+            android:layout_height="150dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:text="LOGOUT" />
+    </LinearLayout>
 
 </LinearLayout>

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@color/lightBlue"
     android:orientation="vertical"
-    tools:context=".homescreen.FinanceSummary">
+    tools:context=".feedback.DeleteFeedbackActivity">
 
     <!-- Toolbar -->
     <androidx.appcompat.widget.Toolbar
@@ -29,17 +29,18 @@
             android:textStyle="bold" />
     </androidx.appcompat.widget.Toolbar>
 
-    <!-- Title Section -->
+    <!-- Title -->
     <TextView
         style="@style/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="FINANCE SUMMARY"
+        android:text="DELETE FEEDBACK"
         android:textSize="35sp"
         android:textStyle="bold"
         android:gravity="center"
         android:layout_marginTop="15dp" />
 
+    <!-- Divider -->
     <View
         android:layout_marginLeft="5dp"
         android:layout_marginRight="10dp"
@@ -47,22 +48,21 @@
         android:layout_height="2dp"
         android:background="@color/darkbrown" />
 
-    <!-- Total Income Display -->
-    <TextView
-        style="@style/textView"
-        android:id="@+id/tvTotalIncome"
+    <!-- Spinner -->
+    <Spinner
+        android:id="@+id/spinnerDeleteFeedback"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Total Earnings: ₹0"
-        android:textStyle="bold"
-        android:textSize="22sp"
+        android:layout_height="50dp"
         android:layout_margin="20dp" />
 
-    <!-- RecyclerView for Client Wise Summary -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recyclerFinanceSummary"
+    <!-- Delete Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/Button"
+        android:id="@+id/btnDeleteFeedback"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="8dp" />
+        android:layout_height="wrap_content"
+        android:text="Delete Feedback"
+        android:textAllCaps="false"
+         />
 
 </LinearLayout>
